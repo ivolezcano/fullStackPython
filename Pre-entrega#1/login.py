@@ -2,14 +2,14 @@ import getpass
 
 usuarios = {}
 
-def registrarUsuarios():
+def registrarUsuarios(baseDatos):
     nombre = input('Ingrese su nombre de usuario: ')
 
     while True:
         contraseña = getpass.getpass('Ingrese su contraseña: ')
         confirmarContraseña = getpass.getpass('Confirme la contraseña: ')
         if contraseña == confirmarContraseña:
-            usuarios[nombre] = contraseña
+            baseDatos[nombre] = contraseña
             print('*******************************')
             print('Usuario registrado con éxito !!')
             print('*******************************')
@@ -17,11 +17,11 @@ def registrarUsuarios():
         else:
             print('Las contraseñas no coinciden, intentelo de nuevo ')
 
-def iniciarSesion():
+def iniciarSesion(baseDatos):
     nombre = input('Ingrese su nombre de usuario: ')
     contraseña = getpass.getpass('Ingrese su contraseña: ')
 
-    if nombre in usuarios and usuarios[nombre] == contraseña:
+    if nombre in usuarios and baseDatos[nombre] == contraseña:
         print('********************')
         print('Inicio de sesión exitoso.')
         print(f'Bienvenido {nombre}')
@@ -29,13 +29,13 @@ def iniciarSesion():
     else: 
         print('Nombre de usuario o contraseña incorrectos.')
 
-def mostrarUsuarios():
-    if not usuarios:
+def mostrarUsuarios(baseDatos):
+    if not baseDatos:
         print('Aún no hay usuarios registrados.')
     else: 
         print('**********************')
         print('USUARIOS REGISTRADOS :')
-        for usuario, contraseña in usuarios.items():
+        for usuario, contraseña in baseDatos.items():
             print(f'Usuario: {usuario}, Contraseña: {contraseña}')
 
 # Bucle principal 
@@ -50,12 +50,13 @@ while True:
     opcion = input('Elije una opción: ')
 
     if opcion == '1':
-        registrarUsuarios()
+        registrarUsuarios(usuarios)
     elif opcion == '2':
-        iniciarSesion()
+        iniciarSesion(usuarios)
     elif opcion == '3':
-        mostrarUsuarios()
+        mostrarUsuarios(usuarios)
     elif opcion == '4':
         print('Hasta luego, vuelva pronto !')
+        break
     else:
         print(f'{opcion}, no es una opción válida. Vuelva a intentarlo.')
