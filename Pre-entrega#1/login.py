@@ -29,13 +29,23 @@ def iniciarSesion():
     else: 
         print('Nombre de usuario o contraseña incorrectos.')
 
+def mostrarUsuarios():
+    if not usuarios:
+        print('Aún no hay usuarios registrados.')
+    else: 
+        print('**********************')
+        print('USUARIOS REGISTRADOS :')
+        for usuario, contraseña in usuarios.items():
+            print(f'Usuario: {usuario}, Contraseña: {contraseña}')
+
 # Bucle principal 
 
 while True:
     print('\nOpciones:')
     print('1. Registrar Usuario')
     print('2. Iniciar sesión')
-    print('3. Salir')
+    print('3. Mostrar Usuarios registrados')
+    print('4. Salir')
 
     opcion = input('Elije una opción: ')
 
@@ -44,7 +54,8 @@ while True:
     elif opcion == '2':
         iniciarSesion()
     elif opcion == '3':
-        print('Gracias, vuelva prontoS')
-        break
+        mostrarUsuarios()
+    elif opcion == '4':
+        print('Hasta luego, vuelva pronto !')
     else:
         print(f'{opcion}, no es una opción válida. Vuelva a intentarlo.')
