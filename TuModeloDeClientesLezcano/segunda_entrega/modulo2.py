@@ -1,4 +1,5 @@
 import getpass
+from modulo1 import Cliente
 
 usuarios = {}
 
