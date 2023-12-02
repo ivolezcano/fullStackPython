@@ -1,9 +1,9 @@
 
-                            #Tercera Entrega                             
-                                ##Proyecto                                
+# Tercera Entrega                             
+## Proyecto                                
 
 
-##Configuración del Entorno Virtual
+## Configuración del Entorno Virtual
 
 1.Abre una terminal y navega hasta la carpeta tercera_entrega de tu proyecto.
 
@@ -15,7 +15,7 @@
 
 4.Instala las dependencias del proyecto utilizando el archivo **requirements.txt**: **pip install -r requirements.txt.**
 
-##Configuración del Archivo .env en la Carpeta Base
+## Configuración del Archivo .env en la Carpeta Base
 
 Dentro de la carpeta **base**, crea un archivo llamado **.env** con el siguiente contenido:
 +---------------------------------------------------------------------------------+
@@ -25,12 +25,12 @@ Dentro de la carpeta **base**, crea un archivo llamado **.env** con el siguiente
 
 Este archivo **.env** contiene configuraciones importantes para inicializar la aplicación.
 
-##Notas Importantes
+## Notas Importantes
 
 -Asegúrate de que el entorno virtual esté activado cada vez que trabajes en el proyecto.
 -Mantén segura la clave secreta y no la compartas públicamente.
 
-##Inicializar la Aplicación
+## Inicializar la Aplicación
 Una vez que hayas configurado el entorno virtual y el archivo .env, puedes iniciar tu aplicación ejecutando: python manage.py runserver.
 
 ¡La aplicación ahora debería estar en funcionamiento!
