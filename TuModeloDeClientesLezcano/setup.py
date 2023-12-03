@@ -1,8 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='tu_paquete',
+    name='paquete_segunda_entrega',
     version='0.1',
-    packages=find_packages(),
+    description='Paquete de la segunda entrega del curso de Python',
+    author='Ivan Lezcano',
+    author_email='lezcamati@gmail.com', 
+    packages=['segunda_entrega'],
 )
 

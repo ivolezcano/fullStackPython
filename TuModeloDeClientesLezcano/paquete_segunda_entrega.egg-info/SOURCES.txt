@@ -1,0 +1,7 @@
+setup.py
+paquete_segunda_entrega.egg-info/PKG-INFO
+paquete_segunda_entrega.egg-info/SOURCES.txt
+paquete_segunda_entrega.egg-info/dependency_links.txt
+paquete_segunda_entrega.egg-info/top_level.txt
+segunda_entrega/modulo1.py
+segunda_entrega/modulo2.py
