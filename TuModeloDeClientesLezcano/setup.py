@@ -8,4 +8,3 @@ setup(
     author_email='lezcamati@gmail.com', 
     packages=['segunda_entrega'],
 )
-
