@@ -1,31 +1,20 @@
+# TuPrimeraPagina
 
-# Tercera Entrega                             
-## Proyecto                                
+Este es mi primer proyecto web en Django. Aquí encuentras un simple blog con funcionalidades básicas.
+
+## Cómo probar el proyecto
+
+1. Instala las dependencias: `pip install -r requirements.txt`
+2. Aplica las migraciones: `python manage.py migrate`
+3. Crea un superusuario: `python manage.py createsuperuser`
+4. Ejecuta el servidor: `python manage.py runserver`
+
+Puedes acceder a la interfaz de administración en http://127.0.0.1:8000/admin/ usando las credenciales del superusuario.
+
+## Funcionalidades
+
+- **Agregar Entrada:** http://127.0.0.1:8000
+- **Listar Entradas:** http://127.0.0.1:8000/listar/
+- **Buscar Entrada:** http://127.0.0.1:8000/buscar/
 
 
-## Configuración del Entorno Virtual
-
-1.Abre una terminal y navega hasta la carpeta tercera_entrega del proyecto.
-
-2.Crea un entorno virtual utilizando el siguiente comando: python -m venv venv.
-
-3.Activa el entorno virtual:
-    En Windows, ejecuta: .\\venv\\Scripts\\activate.
-    En macOS/Linux, ejecuta: source venv/bin/activate.
-
-4.Instala las dependencias del proyecto utilizando el archivo **requirements.txt**: **pip install -r requirements.txt.**
-
-## Configuración del Archivo .env en la Carpeta Base
-
-Dentro de la carpeta **base**, crea un archivo llamado **.env** con el siguiente contenido:
-+---------------------------------------------------------------------------------+
-| DEBUG=True                                                                      |
-| SECRET_KEY='django-insecure-!vj9*f3l@w#nm1#+2a6o823ls1m^pball-frby@n8)v+t=wka3' |
-+---------------------------------------------------------------------------------+
-
-Este archivo **.env** contiene configuraciones importantes para inicializar la aplicación.
-
-## Inicializar la Aplicación
-Una vez que hayas configurado el entorno virtual y el archivo .env, puedes iniciar la aplicación ejecutando: python manage.py runserver.
-
-# **¡La aplicación ahora debería estar en funcionamiento!**
