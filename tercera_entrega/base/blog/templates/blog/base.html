@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Criticas Cinematográficas{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{% block header %}Críticas Cinematográficas{% endblock %}</h1>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>&copy; 2023 Críticas Cinematográficas. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

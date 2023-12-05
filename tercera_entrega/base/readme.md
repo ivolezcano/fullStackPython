@@ -5,7 +5,7 @@
 
 ## Configuración del Entorno Virtual
 
-1.Abre una terminal y navega hasta la carpeta tercera_entrega de tu proyecto.
+1.Abre una terminal y navega hasta la carpeta tercera_entrega del proyecto.
 
 2.Crea un entorno virtual utilizando el siguiente comando: python -m venv venv.
 
@@ -25,12 +25,7 @@ Dentro de la carpeta **base**, crea un archivo llamado **.env** con el siguiente
 
 Este archivo **.env** contiene configuraciones importantes para inicializar la aplicación.
 
-## Notas Importantes
-
--Asegúrate de que el entorno virtual esté activado cada vez que trabajes en el proyecto.
--Mantén segura la clave secreta y no la compartas públicamente.
-
 ## Inicializar la Aplicación
-Una vez que hayas configurado el entorno virtual y el archivo .env, puedes iniciar tu aplicación ejecutando: python manage.py runserver.
+Una vez que hayas configurado el entorno virtual y el archivo .env, puedes iniciar la aplicación ejecutando: python manage.py runserver.
 
-¡La aplicación ahora debería estar en funcionamiento!
+# **¡La aplicación ahora debería estar en funcionamiento!**

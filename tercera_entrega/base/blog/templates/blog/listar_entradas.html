@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Listar Entradas{% endblock %}
+
+{% block content %}
+    <h2>Comentarios</h2>
+    <ul>
+        {% for entrada in entradas %}
+            <li>{{ entrada.titulo }} - {{ entrada.fecha_publicacion }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{% url 'agregar_entrada' %}">Agregar comentarios</a> | <a href="{% url 'buscar_entrada' %}">Buscar comentarios</a></p>
+{% endblock %}

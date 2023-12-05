@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Buscar Entrada{% endblock %}
+{% block content %}
+    <h2>Buscar Entrada</h2>
+    <form method="post" action="{% url 'buscar_entrada' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if resultados %}
+        <h3>Resultados:</h3>
+        <ul>
+            {% for entrada in resultados %}
+                <li>
+                    <strong>{{ entrada.titulo }}</strong>
+                    <p>{{ entrada.contenido }}</p>
+                    <p>Fecha de publicación: {{ entrada.fecha_publicacion }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <p><a href="{% url 'agregar_entrada' %}">Agregar comentarios</a> | <a href="{% url 'listar_entradas' %}">Lista de comentarios</a></p>
+    
+{% endblock %}
